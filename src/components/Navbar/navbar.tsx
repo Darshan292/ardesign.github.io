@@ -4,14 +4,14 @@ import React from "react";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="flex items-center justify-between p-6 bg-transparent ">
+    <nav className="fixed items-center w-full mx-auto p-6 z-10 grid grid-flow-col">
       {/* Logo */}
-      <div className="text-2xl font-bold text-black ml-40">
+      <div className="text-2xl font-bold text-black grid-cols-1 ml-40">
         <a href="#">LOGO</a>
       </div>
 
       {/* Nav Links */}
-      <div className="hidden md:flex space-x-16 mr-40">
+      <div className="hidden md:flex space-x-16 grid-cols-1 ml-auto mr-40">
         <a
           href="#home"
           className="text-black hover:text-blue-500 transition duration-300"
