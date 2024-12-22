@@ -1,11 +1,13 @@
 import LandingPage from "@/pages/home";
-import Random from "@/pages/random";
+import ARAnimation from "@/pages/random";
+import Third from "@/pages/third";
 
 export default function Home() {
   return (
     <div>
         <LandingPage/>
-        <Random/>
+        <ARAnimation/>
+        <Third/>
       </div>
   );
 }
