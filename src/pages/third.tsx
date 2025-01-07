@@ -4,7 +4,7 @@ import React from "react";
 // import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BoatAnimation() {
+const BoatAnimation = () => {
 //   const [progress, setProgress] = useState(0); // Track scroll progress
 
 
@@ -26,3 +26,5 @@ export function BoatAnimation() {
     </>
   );
 }
+
+export default BoatAnimation;
