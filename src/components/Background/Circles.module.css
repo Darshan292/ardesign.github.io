@@ -1,6 +1,6 @@
 @keyframes circle-scale {
     from {
-        opacity: 0.3;
+        opacity: 0.4;
         scale: 0.5;
         transform: translate(0vh,0vh);
       }

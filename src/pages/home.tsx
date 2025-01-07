@@ -47,7 +47,7 @@ const LandingPage: React.FC = () => {
           className={`${styles.circlesAnimation} absolute bg-black w-40 h-40 rounded-full opacity-0 left-1/2`}
         ></div> */}
       </div>
-      <div ref={cardRef} className="w-5/6 z-10 mx-auto text-center lg:text-[7rem] text-[5rem] pt-[7%]">
+      <div ref={cardRef} className="w-5/6 z-10 mx-auto text-center lg:text-[7rem] md:text-[5rem] text-5xl lg:pt-[7%] md:pt-[8%] pt-[16%]">
         <h1 className={`${lato.className}`}>ar designs studio</h1>
       </div>
       <div className="z-10">

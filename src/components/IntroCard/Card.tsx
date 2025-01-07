@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import Link from "next/link";
+import { CardBody, CardContainer, } from "../ui/3d-card";
+import Image from "next/image";
 // import { style } from "framer-motion/client";
 interface CardProps {
   isTopvisible: boolean; // Track visibility of the card
@@ -69,15 +69,16 @@ const handleClick = () => {
         transition: "transform 0.2s ease-out, opacity 0.2s ease-out,",
       }}
       className="relative"
+      
     >
       <div style={{
       transform :`rotateY(${clicked? 180 : 0}deg)`,
       transition: "transform 0.3s ease-in-out",
     }}>
       <CardContainer>
-        <CardBody className={`h-60 w-96 relative bg-[#204480] hover:bg-[#204485] rounded-mg p-6 hover:shadow-black hover:shadow-2xl`} onClick={handleClick} >
+        <CardBody className={` rounded-mg hover:shadow-black hover:shadow-2xl`} onClick={handleClick} >
           {showContent ? (<>
-          <CardItem translateZ="50" className="text-xl font-bold text-white">
+          {/* <CardItem translateZ="50" className="text-xl font-bold text-white">
             Contact Us
           </CardItem>
           <CardItem
@@ -98,14 +99,31 @@ const handleClick = () => {
               className="px-4 rounded-xl text-xs font-normal dark:text-white"
             >
               Try now →
-            </CardItem>
-          </div> </>) : (
+            </CardItem> 
+          </div> */}
+          <Image
+                    src="/cardfront.png" // Replace with the path to your boat image
+                    alt="cardfront"
+                    width={450} // Adjust width
+                    height={350} // Adjust height
+                    priority
+                    className="mx-auto max-lg:h-5/6 max-lg:w-5/6" // Ensure the image loads quickly
+                  />    
+          </>) : (
           <>
-          <div className="scale-x-[-1]">
+          {/* <div className="scale-x-[-1]">
             <CardItem translateZ="50" className="text-xl font-bold text-white mx-auto">
             AR designs
           </CardItem>
-          </div>
+          </div> */}
+          <Image
+                    src="/cardback.png" // Replace with the path to your boat image
+                    alt="Cardfront"
+                    width={450} // Adjust width
+                    height={350} // Adjust height
+                    priority
+                    className="mx-auto scale-x-[-1]" // Ensure the image loads quickly
+                  />   
           
           </>)}
         </CardBody>
