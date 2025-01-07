@@ -9,7 +9,7 @@ const lato = Lato({
   subsets: ['latin'],
 })
 
-export function ARAnimation() {
+const ARAnimation = () => {
   const [isVisible, setIsVisible] = useState(false); // Track if section is fully visible
   const [progress, setProgress] = useState(0); // Track scroll progress
   const scrollLock= useRef(true)
@@ -89,3 +89,5 @@ export function ARAnimation() {
     </div>
   );
 }
+
+export default ARAnimation;
