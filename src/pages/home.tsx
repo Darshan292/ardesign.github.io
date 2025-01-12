@@ -20,7 +20,7 @@ const LandingPage: React.FC = () => {
   
   const x = useTransform(
     arScrollProgress,
-    [0, 0.7], ["-100vw", "0vw"]
+    [0, 0.7], ["-120vw", "0vw"]
   );
   const y = useTransform(
     arScrollProgress,
