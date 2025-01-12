@@ -20,15 +20,15 @@ const LandingPage: React.FC = () => {
   
   const x = useTransform(
     arScrollProgress,
-    [0, 0.7], ["-120vw", "0vw"]
+    [0, 0.6], ["-130vw", "0vw"]
   );
   const y = useTransform(
     arScrollProgress,
-    [0, 0.7],["-40vh", "0vh"]
+    [0, 0.6],["-40vh", "0vh"]
   );
   const rotate = useTransform(
     arScrollProgress,
-    [0, 0.7], [-200, 0] );
+    [0, 0.6], [-200, 0] );
 
 
   return (
