@@ -16,11 +16,11 @@ const ARAnimation = () => {
     offset: ["start start", "end start"]
   })
 
-  const x = useTransform(scrollYProgress, [0, 0.8], ["-40vw", "0vw"])
-  const negativeX = useTransform(scrollYProgress, [0, 0.8], ["40vw", "0vw"])
+  const x = useTransform(scrollYProgress, [0, 0.7], ["-40vw", "0vw"])
+  const negativeX = useTransform(scrollYProgress, [0, 0.7], ["40vw", "0vw"])
   const textcolor = useTransform(
     scrollYProgress,
-    [0.7, 0.8],
+    [0.6, 0.7],
     ["#1a386a", "#ffffff"]
   )
   const backgroundColor = useTransform(
